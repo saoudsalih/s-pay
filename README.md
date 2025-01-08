@@ -1,16 +1,19 @@
-# s_pay
+S-Pay App
 
-A new Flutter project.
+S-Pay is a wallet application designed with a focus on Clean Architecture principles and utilizes BloC Cubit for state management. The app ensures maintainable, scalable, and testable code.
+Features
 
-## Getting Started
+Wallet Management: Seamless handling of wallet transactions and balances.
+Clean Architecture: Modular structure ensuring separation of concerns and maintainability.
+State Management: Powered by BloC Cubit, providing reactive and predictable UI updates.
+Technologies Used
 
-This project is a starting point for a Flutter application.
+Flutter Framework: For cross-platform mobile app development.
+BloC Cubit: For efficient state management.
+Dart Programming Language: For concise and robust application logic.
+Clean Architecture: Enforced modular layers:
+Presentation: UI and state management.
+Domain: Business logic and use cases.
+Data: Repositories and data sources (local/remote).
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

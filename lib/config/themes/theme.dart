@@ -4,6 +4,7 @@ import 'package:s_pay/config/constants/colors.dart';
 import 'package:s_pay/config/themes/custom_themes/app_bar_theme.dart';
 import 'package:s_pay/config/themes/custom_themes/bottom_sheet_theme.dart';
 import 'package:s_pay/config/themes/custom_themes/elevated_button_theme.dart';
+import 'package:s_pay/config/themes/custom_themes/progress_indicator_theme.dart';
 import 'package:s_pay/config/themes/custom_themes/text_theme.dart';
 
 
@@ -18,7 +19,8 @@ class SAppTheme{
     textTheme: STextTheme.lightTextTheme,
     elevatedButtonTheme: SElevatedButtonTheme.lightElevateButtonTheme,
     appBarTheme: SAppBarTheme.lightAppBarTheme,
-    bottomSheetTheme: SBottomSheetTheme.lightBottomSheetTheme
+    bottomSheetTheme: SBottomSheetTheme.lightBottomSheetTheme,
+    progressIndicatorTheme: SProgressIndicatorTheme.lightProgressIndicatorTheme
     
   );
   

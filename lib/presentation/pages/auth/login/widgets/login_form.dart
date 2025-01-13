@@ -4,8 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:s_pay/config/constants/sizes.dart';
 import 'package:s_pay/config/constants/text_strings.dart';
 import 'package:s_pay/data/model/signin_req_params.dart';
-import 'package:s_pay/domain/usecases/signin.dart';
-import 'package:s_pay/presentation/pages/auth/login/auth/auth_cubit.dart';
+import 'package:s_pay/domain/usecases/auth/signin.dart';
 import 'package:s_pay/presentation/pages/auth/login/button/button_cubit.dart';
 import 'package:s_pay/service_locator.dart';
 
@@ -65,12 +64,9 @@ class LoginForm extends StatelessWidget {
                             params: SigninReqParams(
                                 email: _userName.text,
                                 password: _password.text));
-                             
                       },
                       child: state is ButtonLoadingState
-                          ? CircularProgressIndicator(
-                              color: Colors.white,
-                            )
+                          ? CircularProgressIndicator()
                           : Text(STexts.signIn)));
             },
           )

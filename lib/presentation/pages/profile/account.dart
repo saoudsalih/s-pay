@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:s_pay/domain/usecases/logout.dart';
-import 'package:s_pay/presentation/pages/auth/login/auth/auth_cubit.dart';
+import 'package:s_pay/domain/usecases/auth/logout.dart';
+import 'package:s_pay/presentation/pages/auth/cubit/auth_cubit.dart';
 import 'package:s_pay/service_locator.dart';
 
 class MyAccountScreen extends StatefulWidget {

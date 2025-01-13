@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:s_pay/config/routes/routes.dart';
 import 'package:s_pay/config/themes/theme.dart';
-import 'package:s_pay/presentation/pages/auth/login/auth/auth_cubit.dart';
+import 'package:s_pay/presentation/pages/auth/cubit/auth_cubit.dart';
 import 'package:s_pay/presentation/pages/auth/login/button/button_cubit.dart';
 import 'package:s_pay/presentation/pages/auth/login/login.dart';
 import 'package:s_pay/presentation/pages/wallet/wallet_main.dart';
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => s1<AuthStateCubit>()..appStarted()),
-        BlocProvider(create: (context) => ButtonCubit(s1<AuthStateCubit>())),
+        BlocProvider(create: (context) => ButtonCubit(authStateCubit: s1<AuthStateCubit>())),
         ],
       child: MaterialApp(
         title: 'S-Pay',

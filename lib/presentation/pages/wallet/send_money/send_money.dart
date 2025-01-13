@@ -40,6 +40,7 @@ class _SendMoneyState extends State<SendMoney> with SingleTickerProviderStateMix
   @override
   void dispose() {
     _controller.dispose();
+    _animationController.dispose();
     super.dispose();
   }
 

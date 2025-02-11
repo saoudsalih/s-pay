@@ -5,23 +5,50 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-
+import 'package:flutter_test/flutter_test.dart';
+import 'package:s_pay/presentation/pages/auth/login/widgets/validator.dart';
 
 void main() {
-  // testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-  //   // Build our app and trigger a frame.
-  //   await tester.pumpWidget(const MyApp());
+  group("Email Validation", () {
+    // failed cases
+    test("validate for empty phoneNumber", () {
+      //arrange $ act
+      var result = Validator.validatePhoneNumber('');
+      //Assert
+      expect(result, "Phone Number cannot be empty");
+    });
 
-  //   // Verify that our counter starts at 0.
-  //   expect(find.text('0'), findsOneWidget);
-  //   expect(find.text('1'), findsNothing);
+    test("validate for invalid phoneNumber", () {
+      // arrange & act
+      var result = Validator.validatePhoneNumber('836725643');
+      // assert
+      expect(result, "Enter a valid phone number");
+    });
+    // success
+    test("validate for valid phoneNumber", () {
+      // arrange & act
+      var result = Validator.validatePhoneNumber('9061855558');
+      // assert
+      expect(result, null);
+    });
+  });
 
-  //   // Tap the '+' icon and trigger a frame.
-  //   await tester.tap(find.byIcon(Icons.add));
-  //   await tester.pump();
+  group('Password Validation', () {
+    test('validate for empty password', () {
+      var result = Validator.validatePassword('');
+      expect(result, "Password cannot be empty");
+    });
 
-  //   // Verify that our counter has incremented.
-  //   expect(find.text('0'), findsNothing);
-  //   expect(find.text('1'), findsOneWidget);
-  // });
+    test('validate for invalid password', () {
+      var result = Validator.validatePassword('12345');
+      expect(result, "Password must be 6 characters long");
+    });
+
+    test('validate for valid password', () {
+      var result = Validator.validatePassword('123456');
+      expect(result, "Password must be 6 characters long");
+    });
+  });
+
+  
 }

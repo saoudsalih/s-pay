@@ -9,6 +9,7 @@ environment:
   sdk: ^3.6.0
 
 dependencies:
+  bloc_test:
   cupertino_icons: ^1.0.8
   device_preview: ^1.2.0
   dio: ^5.5.0+1

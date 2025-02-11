@@ -57,6 +57,7 @@ class LoginForm extends StatelessWidget {
               return SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
+                    key: Key("submit"),
                       onPressed: () {
                         if (state is ButtonLoadingState) return;
                         context.read<ButtonCubit>().exute(

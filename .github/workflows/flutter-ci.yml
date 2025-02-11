@@ -1,4 +1,4 @@
-name: Flutter CI/CD # saoud test
+name: Flutter CI/CD # saoud test app
 
 on:
   push:

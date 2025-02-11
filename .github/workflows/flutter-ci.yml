@@ -3,7 +3,7 @@ name: Build APK
 on:
   push:
     branches:
-      - main # Change to your deployment branch if needed
+      - main # Change this to your branch
 
 jobs:
   build:
@@ -12,12 +12,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Updated to latest
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.x.x" # Change to your Flutter version
+          flutter-version: "3.x.x" # Replace with your Flutter version
 
       - name: Install dependencies
         run: flutter pub get
@@ -25,8 +25,9 @@ jobs:
       - name: Build APK
         run: flutter build apk --release
 
-      - name: Upload APK
-        uses: actions/upload-artifact@v3
+      - name: Upload APK as Artifact
+        uses: actions/upload-artifact@v4 # ✅ Updated to v4
         with:
           name: release-apk
           path: build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 7 # (Optional) Set how long to keep the artifact

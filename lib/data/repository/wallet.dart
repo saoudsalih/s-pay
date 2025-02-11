@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:either_dart/src/either.dart';
+import 'package:either_dart/either.dart';
+
 import 'package:s_pay/data/model/wallet/transactions.dart';
 import 'package:s_pay/data/source/wallet_api_service.dart';
 import 'package:s_pay/domain/repository/wallet.dart';

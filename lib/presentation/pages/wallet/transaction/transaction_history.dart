@@ -28,14 +28,14 @@ class _TransactionHistoryState extends State<TransactionHistory> {
     _scrollController.addListener(() {
       if (_scrollController.position.userScrollDirection ==
           ScrollDirection.reverse) {
-        if (context.read<WalletCubit>().state.isBottomBarVisible!) {
+        if (context.read<WalletCubit>().state.isBottomBarVisible) {
           context.read<WalletCubit>().showBottomBar();
         }
       }
 
       if (_scrollController.position.userScrollDirection ==
           ScrollDirection.forward) {
-        if (!context.read<WalletCubit>().state.isBottomBarVisible!) {
+        if (!context.read<WalletCubit>().state.isBottomBarVisible) {
           context.read<WalletCubit>().hideBottomBar();
         }
       }

@@ -1,7 +1,4 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:s_pay/config/constants/sizes.dart';
 import 'package:s_pay/config/constants/text_strings.dart';
 import 'package:s_pay/config/helpers/helper_function.dart';

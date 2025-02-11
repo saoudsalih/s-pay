@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:either_dart/src/either.dart';
+import 'package:either_dart/either.dart';
 import 'package:s_pay/core/utils/storage_helper.dart';
 import 'package:s_pay/data/model/signin_req_params.dart';
 import 'package:s_pay/data/source/auth_api_service.dart';

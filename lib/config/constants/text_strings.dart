@@ -1,5 +1,4 @@
 
-import 'package:s_pay/presentation/pages/wallet/send_money/send_money.dart';
 
 class STexts{
 

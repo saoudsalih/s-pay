@@ -5,7 +5,6 @@ import 'package:s_pay/core/common/styles/spacing_styles.dart';
 import 'package:s_pay/presentation/pages/auth/login/button/button_cubit.dart';
 import 'package:s_pay/presentation/pages/auth/login/widgets/login_form.dart';
 import 'package:s_pay/presentation/pages/auth/login/widgets/loging_header.dart';
-import 'package:s_pay/presentation/pages/wallet/wallet_main.dart';
 
 class LoginScreen extends StatefulWidget {
   static String routeName = "/login";

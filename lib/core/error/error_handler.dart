@@ -22,7 +22,7 @@ class ErrorHandler {
         case 201:
         case 200:
           try {
-            print(response.data.toString());
+            log(response.data.toString());
             return Right(parse(response.data));
           } catch (e) {
             return Left(DataParseError(Exception(e.toString())));

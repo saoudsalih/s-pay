@@ -35,7 +35,7 @@ class _WalletMainState extends State<WalletMain> {
       bottomNavigationBar: BlocBuilder<WalletCubit, WalletState>(
         builder: (context, state) {
           return AnimatedContainer(
-            height: state.isBottomBarVisible! ? 80 : 0,
+            height: state.isBottomBarVisible ? 80 : 0,
             duration: const Duration(milliseconds: 300),
             child: Wrap(
               children: [

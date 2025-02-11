@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context)=> WalletCubit())
         ],
       child: MaterialApp(
-        useInheritedMediaQuery: true,
+        // useInheritedMediaQuery: true,
         locale: DevicePreview.locale(context),
         builder: DevicePreview.appBuilder,
         title: 'S-Pay',

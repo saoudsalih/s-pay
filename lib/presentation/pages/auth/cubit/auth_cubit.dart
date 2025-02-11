@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:either_dart/either.dart';
 import 'package:s_pay/core/use_case/use_case.dart';
-import 'package:s_pay/domain/usecases/is_logged_in.dart';
+import 'package:s_pay/domain/usecases/auth/is_logged_in.dart';
 import 'package:s_pay/service_locator.dart';
 
 part 'auth_state.dart';

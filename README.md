@@ -26,4 +26,4 @@
 
 <h2>CI/CD Implementation</h2>
 <p><strong>Continuous Integration/Continuous Deployment:</strong><br>
-The project is integrated with <a href="#">GitHub Actions (or your preferred CI/CD tool)</a> to automate build, testing, and deployment processes. This setup ensures that every code change is automatically verified and deployed, enhancing reliability and speeding up delivery.</p>
+The project is integrated with GitHub Actions to automate build, testing, and deployment processes. This setup ensures that every code change is automatically verified and deployed, enhancing reliability and speeding up delivery.</p>

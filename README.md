@@ -15,5 +15,8 @@ Clean Architecture: Enforced modular layers:
 Presentation: UI and state management.
 Domain: Business logic and use cases.
 Data: Repositories and data sources (local/remote).
+CI/CD Implementation
 
+Continuous Integration/Continuous Deployment:
+The project is integrated with GitHub Actions to automate build, testing, and deployment processes. This setup ensures that every code change is automatically verified and deployed, enhancing reliability and speeding up delivery.
 

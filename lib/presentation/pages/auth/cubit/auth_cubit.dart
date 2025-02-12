@@ -1,5 +1,6 @@
 
 import 'package:either_dart/either.dart';
+import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:s_pay/core/use_case/use_case.dart';
 import 'package:s_pay/domain/usecases/auth/is_logged_in.dart';
